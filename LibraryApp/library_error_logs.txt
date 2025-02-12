@@ -1,0 +1,39 @@
+
+=== Library System Error Log ===
+Timestamp: Thu Feb 06 12:23:13 IST 2025
+Book Borrowing Failed!
+Book: The Great Gatsby (ISBN: ISBN001)
+Member: Jane Smith (ID: M002)
+Error Type: BookAlreadyBorrowedException
+Error Message: Book 'The Great Gatsby' is already borrowed
+Stack Trace:
+org.example.LibrarySystem.borrowBook(LibrarySystem.java:39)
+org.example.Main.main(Main.java:25)
+
+=============================
+
+=== Library System Error Log ===
+Timestamp: Thu Feb 06 12:23:13 IST 2025
+Book Borrowing Failed!
+Book: NULL (ISBN: NULL)
+Member: John Doe (ID: M001)
+Error Type: IllegalArgumentException
+Error Message: Book or member details are invalid
+Stack Trace:
+org.example.LibrarySystem.borrowBook(LibrarySystem.java:28)
+org.example.Main.main(Main.java:34)
+
+=============================
+
+=== Library System Error Log ===
+Timestamp: Thu Feb 06 12:23:13 IST 2025
+Book Borrowing Failed!
+Book: 1984 (ISBN: ISBN002)
+Member: Jane Smith (ID: M002)
+Error Type: IOException
+Error Message: System error: Maximum borrowing limit reached
+Stack Trace:
+org.example.LibrarySystem.borrowBook(LibrarySystem.java:45)
+org.example.Main.main(Main.java:48)
+
+=============================
