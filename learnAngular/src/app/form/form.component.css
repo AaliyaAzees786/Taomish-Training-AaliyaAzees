@@ -1,0 +1,57 @@
+.main-container {
+    background-color: #f0f8ff;
+    max-width: 25rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 0.3rem rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

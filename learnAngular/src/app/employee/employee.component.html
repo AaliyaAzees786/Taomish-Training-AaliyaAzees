@@ -1,0 +1,49 @@
+<div class="main-container">
+    <h2>Employee Table</h2>
+    <table class="employee-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employees">
+          <td>{{ emp.empId }}</td>
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.age }}</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="sumOfAges" (click)="employeeString(); calculateTotalAge()">Process</button>
+            </td>
+            <td *ngIf="showEmp">{{ empString }}</td>
+            <td *ngIf="showTotalAge">{{ totalAge }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <button class="findyoung" (click)="findMinAgeEmployee()">Find Youngest Employee</button>
+  
+    <div class="min-age-section" *ngIf="showMinAgeEmployee">
+      <h3>Employee with Minimum Age</h3>
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let minEmp of minAgeEmployee">
+            <td>{{ minEmp.empId }}</td>
+            <td>{{ minEmp.name }}</td>
+            <td>{{ minEmp.age }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

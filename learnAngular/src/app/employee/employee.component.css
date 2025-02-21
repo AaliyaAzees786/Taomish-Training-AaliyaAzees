@@ -1,0 +1,44 @@
+.main-container {
+    margin: 2rem auto;
+    background-color: #f8f9fa;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .employee-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .employee-table td {
+    padding: 0.8rem;
+    border-bottom: 0.1rem solid #ddd;
+  }
+
+  .employee-table td button{
+    padding: 1rem;
+    background-color: rgb(224, 224, 214);
+    border-radius: 2rem;
+  }
+
+  .findyoung{
+    padding: 1rem;
+    background-color: rgb(224, 224, 214);
+    border-radius: 2rem;
+  }
+

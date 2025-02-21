@@ -1,0 +1,35 @@
+<!-- <div class="main-container">
+    <h2 class="heading">Basic Form</h2>
+    <div class="form" [formGroup]="userForm">
+        <label>Name: <input type="text" placeholder="Enter your name" formControlName="name"></label>
+        <label>Age: <input type="number" placeholder="Enter your age" formControlName="age" [(ngModel)]="age" (ngModelChange)="checkVotingEligibility()"></label>
+        <p *ngIf="canVote">{{ canVote }}</p>
+        <label>Date Of Birth: <input type="date" formControlName="dateofbirth"></label>
+        <label>Role:
+            <select formControlName="role">
+                <option>Select</option>
+                <option>Senior Architect</option>
+                <option>HR</option>
+                <option>Developer</option>
+                <option>Intern</option>
+                <option>Product Manager</option>
+            </select>
+        </label>
+        <div formGroupName="address">
+        <h5 class="heading">Address</h5>
+        <label>Street: <input type="text" placeholder="Enter Street" formControlName="street"></label>
+        <label>City: <input type="text" placeholder="Enter City" formControlName="city"></label>
+        <label>Pincode: <input type="text" placeholder="Enter Pin" formControlName="pincode"></label>
+        </div>
+        <button (click)="onclick()" type="submit">Submit</button>
+    </div>
+</div> -->
+
+
+
+<input type="text" #input>
+
+  <button (ngModelChange)="onClick()" [(ngModel)]="sum">click</button>
+{{ sum }}
+
+  <!-- {{message}} -->

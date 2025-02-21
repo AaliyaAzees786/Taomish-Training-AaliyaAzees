@@ -1,0 +1,39 @@
+.disable-button{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 12rem;
+    align-items: center;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);;
+}
+
+.input{
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.info:hover{
+    cursor: pointer;
+}
+
+.first{
+    font-size: large;
+}
+
+.submit-btn{
+    height: 2rem;
+    background-color: rgb(149, 149, 188);
+    border-radius: 0.5rem;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
+
+.paragraph{
+    font-size: large;
+    font-weight: bold;
+}

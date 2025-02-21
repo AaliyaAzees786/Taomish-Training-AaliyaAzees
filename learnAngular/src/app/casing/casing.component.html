@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Text Converter</h2>
+    <form [formGroup]="converterForm">
+    <div class="form-group">
+        <label for="inputText">Enter Text:</label>
+        <input id="inputText" type="text" formControlName="inputText" class="form-control" placeholder="Enter text to format">
+    </div>
+      
+    <div class="format-options">
+        <button type="button" (click)="formatText('titleCase')">Title Case</button>
+        <button type="button" (click)="formatText('camelCase')">camelCase</button>
+        <button type="button" (click)="formatText('lowercase')">lowercase</button>
+        <button type="button" (click)="formatText('UPPERCASE')">UPPERCASE</button>
+        <button type="button" (click)="formatText('snake_case')">snake_case</button>
+    </div>
+      
+    <div class="result" *ngIf="formattedText">
+        <h3>Formatted Result:</h3>
+        <div class="formatted-output">{{ formattedText }}</div>
+    </div>
+    </form>
+
+</div>
+
+
+<button (click)="onClick()"> click</button>
+
+<button (click)="getData()"> Get Data</button>
+{{ array }}
